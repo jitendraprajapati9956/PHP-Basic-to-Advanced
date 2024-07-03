@@ -1,0 +1,32 @@
+<?php
+
+include "Html.php";
+
+$table = new Html\Table();
+$table->title = "My table";
+$table->numRows = 5;
+
+$row = new Html\Row();
+$row->numCells = 3;
+?>
+
+
+<html>
+<body>
+<h2>Using Namespaces</h2>
+<br>
+<?php $table->message(); ?>
+<?php $row->message(); ?>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
